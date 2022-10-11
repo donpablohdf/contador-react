@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cuerpo(){
+export default function Cuerpo(){
    
     return (
         <div className="row bg-dark p-3 d-flex justify-content-around align-items-center m-3">
@@ -15,4 +15,4 @@ function Cuerpo(){
         
     );
 }
-export default Cuerpo;
+
