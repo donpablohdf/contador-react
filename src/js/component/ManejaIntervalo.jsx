@@ -46,7 +46,8 @@ ManejaIntervalo.AlertaIntervalo = () =>{
             if (cuenta==num_alerta){  
                 num_alerta= "Alerta";
                 cuenta --;  
-                clearInterval(IdintervaloAlert);      
+                clearInterval(IdintervaloAlert);
+                IdintervaloAlert = null;    
                 alert("Alerta");                
                 document.getElementById("alerta").value= num_alerta;
             }
