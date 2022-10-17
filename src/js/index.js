@@ -9,6 +9,13 @@ import "../styles/index.css";
 import Cuerpo from "./component/Cuerpo.jsx"
 import ManejaIntervalo from "./component/ManejaIntervalo.jsx"
 //creo el cuerpo
-ReactDOM.render(<Cuerpo />, document.getElementById("cuerpo"));
+ReactDOM.render(
+<React.StrictMode>
+        <>
+        <Cuerpo />
+        </>
+</React.StrictMode>
+, 
+document.getElementById("cuerpo"));
 
 window.onload = ManejaIntervalo.ArrancaIntervalo(true) ;

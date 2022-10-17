@@ -11,7 +11,13 @@ const ManejaIntervalo = new Object();
 ManejaIntervalo.Contador = () =>{
     const oElem = document.getElementById("app");
     resultado= cuenta.toLocaleString("en", {minimumIntegerDigits: 6, maximumFractionDigits: 10, useGrouping: false});        
-    ReactDOM.render(<Intervalo segundos= {resultado} />, oElem);
+    ReactDOM.render(
+        <React.StrictMode>
+        <>
+        <Intervalo segundos= {resultado} />
+        </>
+        </React.StrictMode>
+    , oElem);
     cuenta++;
 }
 ManejaIntervalo.StopIntervalo = () =>{
